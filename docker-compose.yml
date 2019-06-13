@@ -10,7 +10,7 @@ services:
         volumes:
             - ./account-data:/opt/cloudmapper/account-data
             - ./config.json:/opt/cloudmapper/config.json
-            - ./web:/opt/cloudmapper/web
+            - ./web/data.json:/opt/cloudmapper/web/data.json
         ports:
             - ${EXTERNAL_PORT}:8000
         # TODO: switch to environment variables instead loading the .env manually
